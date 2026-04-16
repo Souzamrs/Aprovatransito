@@ -1,0 +1,1 @@
+ALTER TABLE public.tokens ADD COLUMN IF NOT EXISTS expires_at TIMESTAMP WITH TIME ZONE DEFAULT (now() + interval '6 months');
